@@ -1,0 +1,95 @@
+:root {
+    --display-flex: flex;
+    --display-block: block;
+    --justify-content: center;
+    --align-items: center;
+    --border-radius: 0.5em;
+    --margin-auto: auto;
+    --shadow: 1px 1px 2px #61616193;
+    --margin: 2em;
+    --outline: none;
+}
+
+body {
+    background-image: url("moneey.jpeg");
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.container {
+    margin-top: 15em;
+    border: rgba(255, 255, 255, 0.112) solid;
+    width: 50%;
+    background-color: rgba(205, 205, 205, 0.879);
+}
+
+.container,
+.input,
+.select {
+    display: var(--display-block);
+    margin-left: var(--margin-auto);
+    margin-right: var(--margin-auto);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.container,
+.text,
+.inputs,
+button {
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+}
+
+.text {
+    display: var(--display-flex);
+    font-size: 2em;
+}
+
+.text,
+.text1 {
+    color: rgb(26, 27, 28);
+    text-shadow: var(--shadow);
+    font-weight: normal;
+}
+
+.text1 {
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+
+.input,
+.select,
+.text {
+    margin: var(--margin);
+}
+
+.input,
+.select {
+    height: 2em;
+}
+
+.select {
+    width: 5em;
+}
+
+.inputs,
+button {
+    display: var(--display-flex);
+}
+
+button {
+    height: 3em;
+    width: 2em;
+    margin-left: 70%;
+    border-radius: var(--border-radius);
+    padding: 1em;
+}
+
+.input,
+.select,
+button {
+    outline: var(--outline);
+    border: 0.1em solid rgba(0, 0, 0, 0.297);
+    background-color: rgba(255, 255, 255, 0.824);
+}
